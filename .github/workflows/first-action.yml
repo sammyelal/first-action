@@ -1,0 +1,15 @@
+name: My First Workflow
+on:
+  workflow_dispatch:
+  
+jobs:
+  
+  first_job:
+    name: Prints a message
+    runs-on: windows-2022
+    
+    steps:
+      - name: print first message
+        run: echo "first message"
+      - name: secound message
+        run: echo "second message"
